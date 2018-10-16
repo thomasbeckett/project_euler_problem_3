@@ -37,13 +37,18 @@ class Primes
     # end
     # puts primes.last
     # primes
-    primes = []
-    Prime.each((num+1)/2) do |prime|
-      if num % prime == 0
-        primes.push prime
-      end
-    end
-    puts primes.last
-    primes
+    # primes = []
+    # Prime.each((num+1)/2) do |prime|
+    #   if num % prime == 0
+    #     primes.push prime
+    #   end
+    # end
+    # puts primes.last
+    # primes
+
+    factors = Prime.prime_division num
+    puts factors.flatten.max
+    factors.flatten
+
   end
 end

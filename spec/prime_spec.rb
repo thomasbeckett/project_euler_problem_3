@@ -23,6 +23,6 @@ describe 'Problem 3' do
     @num.primes(600851475143)
     expect(@num).to respond_to :primes
     expect(@num.primes(10)).to be_a Array
-    expect(@num.primes(10).last).to eq 5
+    expect(@num.primes(10).max).to eq 5
   end
 end
